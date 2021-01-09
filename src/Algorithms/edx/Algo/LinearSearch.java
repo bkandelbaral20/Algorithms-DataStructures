@@ -1,4 +1,4 @@
-package Algorithms.edx;
+package Algorithms.edx.Algo;
 
 public class LinearSearch {
     public static int search(int[] nums, int num){

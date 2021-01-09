@@ -1,4 +1,4 @@
-package Algorithms.edx;
+package Algorithms.edx.Algo;
 
 /*
 We start at the front of the array and compare each pair of numbers. If they are out of order(ascending order),
