@@ -22,6 +22,7 @@ int: the number of candles that are tallest
  */
 public class BirthdayCandle {
     public static void main(String[] args) {
+
         ArrayList<Integer> candleList = new ArrayList();
         candleList.add(4);
         candleList.add(1);
@@ -29,6 +30,7 @@ public class BirthdayCandle {
         candleList.add(2);
         candleList.add(4);
         candleList.add(4);
+
         System.out.println("The total numbers in an arrayList " + candleList);
         System.out.println("The tallest candle is " + Collections.max(candleList));
         System.out.println("Counting the total number of tallest candles " + countingCandles(candleList));
@@ -37,10 +39,8 @@ public class BirthdayCandle {
         int count = 0;
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < candles.size(); i++) {
-            if (candles.get(i) > max) {
+            if (candles.get(i) >= max) {
                 max = candles.get(i);
-                count = 1;
-            } else if (candles.get(i) == max) {
                 count++;
             }
         }
