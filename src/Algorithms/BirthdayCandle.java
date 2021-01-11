@@ -28,20 +28,20 @@ public class BirthdayCandle {
         candleList.add(3);
         candleList.add(2);
         candleList.add(4);
-
+        candleList.add(4);
         System.out.println("The total numbers in an arrayList " + candleList);
         System.out.println("The tallest candle is " + Collections.max(candleList));
         System.out.println("Counting the total number of tallest candles " + countingCandles(candleList));
-
     }
-
-    public static int countingCandles(List<Integer> candles){
+    public static int countingCandles(List<Integer> candles) {
         int count = 0;
         int max = Integer.MIN_VALUE;
-        for(int i = 0; i < candles.size(); i++){
-            if(candles.get(i) > max) {
+        for (int i = 0; i < candles.size(); i++) {
+            if (candles.get(i) > max) {
                 max = candles.get(i);
-                count ++;
+                count = 1;
+            } else if (candles.get(i) == max) {
+                count++;
             }
         }
         return count;
