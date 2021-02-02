@@ -12,6 +12,7 @@ public class DimensionalArray {
                     {7, 8, 3, 5, 4,}};
 
             System.out.println("The total numbers in array is = " + getTotal(numbers));
+            System.out.println(getAverage(numbers));
         }
 
         // getTotal method and return total value of the array
@@ -25,6 +26,11 @@ public class DimensionalArray {
             return totalValue;
         }
 
+    // getAverage method and return averages of all values
+    public static double getAverage(int[][] numbers) {
+        int totalNumberOfElements = 10; // (2 rows * 5 column)
+        return getTotal(numbers) /totalNumberOfElements;
+    }
 
     }
 
