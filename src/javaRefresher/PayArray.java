@@ -29,7 +29,7 @@ public class PayArray {
         System.out.println(" The gross pay rate of each employees are :");
         for (int i = 0; i < EMPLOYEES; i++) {
             grossPay = hours[i] * payRate;
-            System.out.println(" Employee " + (i + 1) + " : " + grossPay);
+            System.out.println(" Employee " + (i + 1) + " : $" + grossPay);
         }
     }
 }
