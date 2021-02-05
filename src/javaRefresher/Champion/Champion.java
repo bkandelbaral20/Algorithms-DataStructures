@@ -26,6 +26,19 @@ import java.util.Scanner;
             System.out.println(Arrays.toString(listOfLines));
 //            System.out.println(listOfLines.length);
 
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Please enter the name of the team : ");
+            String userName = sc.nextLine();
+            System.out.println(userName);
+            int count = 0;
+
+            for ( int i = 0; i < listOfLines.length; i++ ) {
+                if (listOfLines[i].equalsIgnoreCase(userName)) {
+                    count++;
+                }
+            }
+            System.out.println(count);
+            System.out.println( userName + " had won the game " + count);
         }
     }
 
