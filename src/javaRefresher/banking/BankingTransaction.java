@@ -1,4 +1,4 @@
-package javaRefresher;
+package javaRefresher.banking;
 
 //create a banking transaction class that holds all the activities happened on bank account
 
@@ -43,6 +43,7 @@ public class BankingTransaction {
     // for monthly processing
     public void monProcess() {
         balance -= monthlyServiceCharge;
+        calInterestRate();
         numberOfWithDrawls = 0;
         numberOfDeposits = 0;
         monthlyServiceCharge = 0;
